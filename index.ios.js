@@ -21,6 +21,9 @@ class NativePort extends Component {
 			</View>
 		)
 	}
+	componentDidMount() {
+		console.log(this.props);
+	}
 }
 
 const styles = StyleSheet.create({

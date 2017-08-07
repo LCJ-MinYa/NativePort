@@ -28,7 +28,14 @@
     RCTRootView *rootView =
     [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
                          moduleName        : @"NativePort"
-                         initialProperties : nil
+                         initialProperties : @{
+                                               @"data": @[
+                                                       @{
+                                                           @"name": @"LiChaoJun",
+                                                           @"age": @"25"
+                                                           }
+                                                       ]
+                                               }
                           launchOptions    : nil];
     UIViewController *vc = [[UIViewController alloc] init];
     vc.view = rootView;
